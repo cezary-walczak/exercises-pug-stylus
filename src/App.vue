@@ -23,7 +23,15 @@ export default {
     background lightGray
     color red
     border solid 1px @color
+    margin-left: -10px
     div
+      margin-left abs(@margin-left)
+      background rgba(#fff, 0.9)
+      background grayscale(blue)
+      background desaturate(blue, 60%)
+      margin-top abs(-10px)
+      margin-top ceil(4.4%)
+      margin-top unit(4.4%, 'px')
       width 100px
       height 100px
       border solid 1px @color

@@ -15,21 +15,7 @@ export default {
 </script>
 
 <style lang="stylus">
-  lightGray = #eee
-  red = #be2525
-
-  border-radius(radius = 10px)
-    -webkit-border-radius radius
-    border-radius radius
-
-  clear-fix()
-    zoom 1
-    &:after
-    &:before
-      content ""
-      display table
-    &:after
-      clear both
+  @import '*'
 
   section
     width 200px

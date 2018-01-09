@@ -34,5 +34,6 @@ export default {
       border-radius 30px
       clear-fix()
       transition(all 1s ease)
+      test(11)
 
 </style>

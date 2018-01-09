@@ -33,5 +33,6 @@ export default {
       border solid 1px @color
       border-radius 30px
       clear-fix()
+      transition(all 1s ease)
 
 </style>

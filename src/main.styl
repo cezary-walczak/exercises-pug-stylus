@@ -1,9 +1,15 @@
   lightGray = #eee
   red = #be2525
 
+  vendor(property, arg)
+    -webkit-{property} arg
+    {property} arg
+
   border-radius(radius = 10px)
-    -webkit-border-radius radius
-    border-radius radius
+    vendor('border-radius', radius)
+
+  transition(args)
+    vendor('transition', args)
 
   clear-fix()
     zoom 1

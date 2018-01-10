@@ -1,6 +1,10 @@
 <template lang="pug">
   #main
     .wrapper
+      .banner
+        img(src='./assets/logo.png')
+        h2 Vue.js
+
       .services
         .service
           h2 Service 1
@@ -77,6 +81,17 @@ export default {
     margin 0 auto
     padding 20px
     clear()
+
+    .banner
+      height 120px
+      overflow hidden
+      margin 1%
+      position relative
+      h2
+        position absolute
+        top 30px
+        width 100%
+        text-align center
 
     .services
       clear()

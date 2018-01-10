@@ -1,9 +1,17 @@
 <template lang="pug">
   #main
-    p test
-    p test
-    a(href='') test
-    a(href='') test
+    p.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
+      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
+    p.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
+      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
+    p.
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
+      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
 </template>
 
 <script>
@@ -18,10 +26,9 @@ export default {
 </script>
 
 <style lang="stylus">
-  p, a
-    width 20%
-    margin 20px
-    padding 30px
-    border 2px solid #000
-    display inline-block
+  p
+    padding 20px
+    background #eee
+    font-family arial
+    line-height 1.4em
 </style>

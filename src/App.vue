@@ -52,6 +52,19 @@ export default {
 </script>
 
 <style lang="stylus">
+  vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    -ms-{prop} args
+    {prop} args
+
+  column-count()
+    vendor('column-count', arguments)
+  column-gap()
+    vendor('column-gap', arguments)
+  column-rule()
+    vendor('column-rule', arguments)
+
   clear()
     &:after
       content ""
@@ -84,6 +97,11 @@ export default {
       background #ccc
       clear both
       margin-top 100px
+      p
+        column-count 3
+        column-gap 50px
+        column-rule 1px solid #aaa
+        text-align justify
 
     .columns
       clear()

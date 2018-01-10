@@ -30,6 +30,7 @@ export default {
       animation-fill-mode both
       animation-iteration-count infinite
       animation-direction alternate-reverse
+      animation-timing-function cubic-bezier(0.5,0,0.5,1)
 
 @keyframes animationer
   from 

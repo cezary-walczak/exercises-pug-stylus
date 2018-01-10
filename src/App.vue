@@ -29,6 +29,7 @@ export default {
       animation-duration 3s
       animation-fill-mode both
       animation-iteration-count infinite
+      animation-direction alternate-reverse
 
 @keyframes animationer
   from 

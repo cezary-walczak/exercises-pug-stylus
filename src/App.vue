@@ -118,6 +118,8 @@ export default {
 
     .services
       clear()
+      max-height 120px
+      overflow hidden 
       .service
         float left
         background #ddd

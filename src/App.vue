@@ -42,6 +42,13 @@
             Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
             Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
           img(src='./assets/logo.png')
+
+      nav
+        ul
+          li link
+          li link
+          li link
+          li link
 </template>
 
 <script>
@@ -135,4 +142,19 @@ export default {
         padding 1%
         margin 1%
         background #bbb
+
+    nav
+      background #333
+      position fixed
+      top 0 
+      left 0
+      width 100%
+      ul
+        clear()
+        li
+          list-style-type none
+          margin 0 10px
+          color #fff
+          float right
+
 </style>

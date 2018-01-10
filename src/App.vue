@@ -25,12 +25,21 @@ export default {
     img
       position absolute
       top 100px
-      animation animationer 3s 2s ease-in-out infinite alternate-reverse
+      animation animationer 3s ease-in-out infinite alternate-reverse,
+                animationet 2s 4s ease alternate
 
 @keyframes animationer
   from 
     transform translateX(-100px)
   to
     transform translateX(100px)
+
+@keyframes animationet
+  0%
+    top 100px
+  50%
+    top 50px
+  100%
+    top 100px
 
 </style>

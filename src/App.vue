@@ -28,7 +28,7 @@ export default {
       animation-name animationer
       animation-duration 3s
       animation-fill-mode both
-      animation-delay 3s
+      animation-iteration-count infinite
 
 @keyframes animationer
   from 

@@ -27,10 +27,12 @@ export default {
       top 100px
       animation-name animationer
       animation-duration 3s
+      animation-fill-mode both
+      animation-delay 3s
 
 @keyframes animationer
   from 
-    transform translateX(0)
+    transform translateX(-100px)
   to
     transform translateX(100px)
 

@@ -1,17 +1,41 @@
 <template lang="pug">
   #main
-    p.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
-      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
-    p.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
-      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
-    p.
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-      Atque neque repudiandae praesentium hic sapiente quis esse dolorem doloribus, 
-      iusto dolore sequi assumenda amet mollitia reiciendis nesciunt unde ullam qui ad.
+    .wrapper
+      img(src='./assets/logo.png' )
+      p.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+        Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+        Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+
+      .box.blue
+      .box.red
+      .box.green
+
+      .service
+        h2 Service 1
+        p This is service 1
+      .service
+        h2 Service 2
+        p This is service 2
+      .service
+        h2 Service 3
+        p This is service 3
+
 </template>
 
 <script>
@@ -26,9 +50,42 @@ export default {
 </script>
 
 <style lang="stylus">
-  p
-    padding 20px
+  .wrapper
     background #eee
-    font-family arial
-    line-height 1.4em
+    max-width 960px
+    margin 0 auto
+    padding 20px
+    &:after
+      content ""
+      display block
+      clear both
+    img
+      float right
+      margin 10px
+
+    .box
+      width: 100px
+      height 100px
+    .blue
+      background blue
+      float right
+    .red
+      background red
+      float left
+    .green
+      background green
+      margin auto
+
+    .service
+      float left
+      background #ddd
+      width 29%
+      margin 1%
+      padding 1%
+      text-align center
+      h1, p
+        color #999
+        margin 10px 0
+        text-align center
+
 </style>

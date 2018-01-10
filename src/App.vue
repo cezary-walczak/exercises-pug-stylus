@@ -25,12 +25,7 @@ export default {
     img
       position absolute
       top 100px
-      animation-name animationer
-      animation-duration 3s
-      animation-fill-mode both
-      animation-iteration-count infinite
-      animation-direction alternate-reverse
-      animation-timing-function cubic-bezier(0.5,0,0.5,1)
+      animation animationer 3s 2s ease-in-out infinite alternate-reverse
 
 @keyframes animationer
   from 

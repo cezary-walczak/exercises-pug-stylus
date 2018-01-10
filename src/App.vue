@@ -17,6 +17,27 @@
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
           Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
           Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+
+      .columns
+        section
+          h2 this is column 1
+          p.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+            Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+            Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+            Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+        aside
+          h2 this is column 1
+          p.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Consequatur inventore omnis soluta voluptates, enim magnam quis a ullam. 
+            Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
+          img(src='./assets/logo.png')
 </template>
 
 <script>
@@ -46,7 +67,6 @@ export default {
 
     .services
       clear()
-
       .service
         float left
         background #ddd
@@ -64,4 +84,13 @@ export default {
       background #ccc
       clear both
       margin-top 100px
+
+    .columns
+      clear()
+      section, aside
+        float left
+        width 46%
+        padding 1%
+        margin 1%
+        background #bbb
 </style>

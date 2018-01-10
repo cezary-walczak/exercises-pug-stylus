@@ -1,5 +1,7 @@
 <template lang="pug">
   #main
+    .wrapper
+      img(src='./assets/logo.png')
 
 </template>
 
@@ -15,7 +17,12 @@ export default {
 </script>
 
 <style lang="stylus">
-  #main
-    display flex
+  .wrapper
+    width 100%
+    padding 20px
+    box-sizing border-box
+    text-align center
+    img
+      transform translate(-200px, 200px) scale(1.2, 1.5) rotateZ(-60deg)    
     
 </style>

@@ -87,16 +87,25 @@ export default {
         margin 1%
         padding 1%
         text-align center
+        position relative
         h1, p
           color #999
           margin 10px 0
           text-align center
+        &:nth-child(1)
+          top 5px
+        &:nth-child(2)
+          top 10px
+        &:nth-child(3)
+          top 15px
 
     .content
       padding 10px
       background #ccc
       clear both
       margin-top 100px
+      position relative
+      top -50px
       p
         column-count 3
         column-gap 50px

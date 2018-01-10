@@ -1,6 +1,13 @@
 <template lang="pug">
   #main
     .wrapper
+      nav
+        ul
+          li link
+          li link
+          li link
+          li link
+
       .banner
         img(src='./assets/logo.png')
         h2 Vue.js
@@ -43,12 +50,6 @@
             Reiciendis dolor laboriosam velit aperiam deserunt distinctio impedit ad commodi sapiente aliquid!
           img(src='./assets/logo.png')
 
-      nav
-        ul
-          li link
-          li link
-          li link
-          li link
 </template>
 
 <script>
@@ -88,6 +89,21 @@ export default {
     margin 0 auto
     padding 20px
     clear()
+
+    nav
+      background #333
+      position fixed
+      top 0 
+      left 0
+      width 100%
+      z-index 1
+      ul
+        clear()
+        li
+          list-style-type none
+          margin 0 10px
+          color #fff
+          float right
 
     .banner
       height 120px
@@ -142,19 +158,5 @@ export default {
         padding 1%
         margin 1%
         background #bbb
-
-    nav
-      background #333
-      position fixed
-      top 0 
-      left 0
-      width 100%
-      ul
-        clear()
-        li
-          list-style-type none
-          margin 0 10px
-          color #fff
-          float right
 
 </style>

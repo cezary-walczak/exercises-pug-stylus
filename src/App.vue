@@ -24,11 +24,10 @@ export default {
     width 100%
     .flex-container
       display flex
-      flex-wrap wrap-reverse
+      flex-wrap wrap
       .box
         height 100px
-        min-width 300px
-        flex-grow 1
+        flex-basis 800px
         &.one
           background red
         &.two

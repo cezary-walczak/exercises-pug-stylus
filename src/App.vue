@@ -29,9 +29,12 @@ export default {
         min-width 100px
         &.one
           background red
+          flex-grow 2
         &.two
           background blue
+          flex-grow 3
         &.three
           background green
-          
+          flex-grow 1
+
 </style>

@@ -1,7 +1,10 @@
 <template lang="pug">
   #main
     .wrapper
-      img(src='./assets/logo.png')
+      .flex-container
+        .box.one
+        .box.two
+        .box.three
 
 </template>
 
@@ -19,27 +22,16 @@ export default {
 <style lang="stylus">
   .wrapper
     width 100%
-    padding 20px
-    box-sizing border-box
-    text-align center
-    img
-      position absolute
-      top 100px
-      animation animationer 3s ease-in-out infinite alternate-reverse,
-                animationet 2s 4s ease alternate
-
-@keyframes animationer
-  from 
-    transform translateX(-100px)
-  to
-    transform translateX(100px)
-
-@keyframes animationet
-  0%
-    top 100px
-  50%
-    top 50px
-  100%
-    top 100px
-
+    .flex-container
+      display flex
+      .box
+        height 100px
+        min-width 100px
+        &.one
+          background red
+        &.two
+          background blue
+        &.three
+          background green
+          
 </style>

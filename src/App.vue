@@ -26,15 +26,15 @@ export default {
       display flex
       .box
         height 100px
-        min-width 100px
+        width 300px
         &.one
           background red
-          flex-grow 2
+          flex-shrink 2
         &.two
           background blue
-          flex-grow 3
+          flex-shrink 3
         &.three
           background green
-          flex-grow 1
+          flex-shrink 1
 
 </style>

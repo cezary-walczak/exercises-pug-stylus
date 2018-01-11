@@ -11,6 +11,11 @@
             a(href='') menu-item-3
           li
             a(href='') menu-item-4
+        ul
+          li
+            a(href='').icon submenu-item-1
+          li
+            a(href='').icon submenu-item-2
 
       .flex-container
         .box.one
@@ -32,7 +37,7 @@ export default {
 
 <style lang="stylus">
 
-min-screen = 30em
+min-screen = 800px
 
   .wrapper
     width 100%
@@ -41,7 +46,7 @@ min-screen = 30em
       ul
         list-style-type none 
         padding 0
-
+        margin 0
         li
           a
             text-decoration none 
@@ -52,6 +57,10 @@ min-screen = 30em
             background #666
             &:hover
               background #999
+            &.icon
+              background url('./assets/logo.png') no-repeat center center / contain
+              color transparent
+              text-indent -10000px
 
     .flex-container
       display flex
@@ -68,9 +77,10 @@ min-screen = 30em
 
 @media screen and (min-width min-screen)
   nav
+    display flex
+    justify-content space-between
     ul
       display flex
-      justify-content space-around
       li
         flex 1 1 0
 

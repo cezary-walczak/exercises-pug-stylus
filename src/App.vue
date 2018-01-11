@@ -27,10 +27,10 @@ export default {
       display flex
       flex-wrap wrap
       flex-flow column-reverse
-      justify-content center
+      align-items center
       height 800px
       .box
-        height 100px
+        width 100px
         flex 0 0 100px
         &.one
           background red

@@ -24,17 +24,16 @@ export default {
     width 100%
     .flex-container
       display flex
+      flex-wrap wrap-reverse
       .box
         height 100px
-        width 300px
+        min-width 300px
+        flex-grow 1
         &.one
           background red
-          flex-shrink 2
         &.two
           background blue
-          flex-shrink 3
         &.three
           background green
-          flex-shrink 1
 
 </style>

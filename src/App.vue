@@ -1,15 +1,12 @@
 <template lang="pug">
   #main
     .wrapper
-      div 1
-      div 2
-      div 3
-      div 4
-      div Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ea rem consectetur saepe accusantium est expedita doloremque suscipit ut quidem, illum architecto facilis. Illum quia quidem architecto repellendus? Deleniti, incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ea rem consectetur saepe accusantium est expedita doloremque suscipit ut quidem, illum architecto facilis. Illum quia quidem architecto repellendus? Deleniti, incidunt.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam ea rem consectetur saepe accusantium est expedita doloremque suscipit ut quidem, illum architecto facilis. Illum quia quidem architecto repellendus? Deleniti, incidunt.
-      div 6
-      div 7
-      div 8
-      div 9
+      .div1 1
+      .div2 2
+      .div3 3
+      .div4 4
+      .div5 5
+      .div6 6
 
 </template>
 
@@ -29,19 +26,29 @@ export default {
     max-width 960px
     margin 0 auto
     display grid
-    // grid-template-columns 30% 20% 50%
-    // grid-template-columns 1fr 2fr 1fr
-    grid-template-columns repeat(3, 1fr)
-    // grid-auto-rows minmax(200px, auto)
-    // grid-template-rows 100px 200px 300px
-    grid-template-rows repeat(3, minmax(200px, auto))
-    // grid-column-gap 10px
-    // grid-row-gap 10px
+    grid-template-columns repeat(6, 1fr)
+    grid-template-rows repeat(4, minmax(150px, auto))
     grid-gap 10px
     div
       background #eee
       padding 30px
       &:nth-child(even)
         background #ddd
-
+      &.div1
+        // grid-column-start 1
+        // grid-column-end 3 
+        grid-column 1/3
+      &.div2
+        grid-column 3/7
+      &.div3
+        grid-column 1/4
+        grid-row 2/4
+      &.div4
+        grid-column 4/7
+        grid-row 2/4
+      &.div5
+        grid-column 3/7
+      &.div6
+        grid-row 4
+        grid-column 1/3
 </style>

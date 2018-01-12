@@ -72,6 +72,15 @@ export default {
     line-height 1.2rem
     cursor pointer
 
+  inputStyle()
+    display block
+    margin-bottom dp
+    padding 10px
+    padding-left dp+2*dp
+    border 0
+    border-radius 5px
+    font-size 1rem
+
   #main
     background #eee
     margin 0
@@ -120,18 +129,23 @@ export default {
             letter-spacing 0.1rem
           input[type=email]
           input[type=telephone]
-            display block
-            margin-bottom dp
-            padding 10px
-            padding-left dp+2*dp
-            border 0
-            border-radius 5px
-            font-size 1rem
+            inputStyle()
 
           input[type=email]
             background #ccc url(./assets/inputs.png) no-repeat 7px 7px
 
           input[type=telephone]
             background #ccc url(./assets/inputs.png) no-repeat 7px -57px
+
+        select
+          appearance: none;
+          inputStyle()
+          padding-left 10px
+          background #ddd url(./assets/select.png) no-repeat 95% center
+          width 400px
+        input[type=submit]
+          inputStyle()
+          background #ddd url(./assets/select.png) no-repeat left center
+          box-shadow 0px 0px 50px rgba(#000, 0.1) inset
 
 </style>

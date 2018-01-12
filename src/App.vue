@@ -58,8 +58,13 @@ export default {
 </script>
 
 <style lang="stylus">
-dp = 20px
+  dp = 20px
 
+  hideInput() 
+    opacity 0 
+    width 0 
+    margin 0 
+  
   #main
     background #eee
     margin 0
@@ -75,5 +80,20 @@ dp = 20px
         p
           font-size 2rem
           letter-spacing 0.2rem
+        input[type=radio]
+          hideInput()
+          &:checked + label[for=male]
+          &:checked + label[for=female]
+            background-position 0 0
+            color #42b883
+            
+        label[for=male]
+        label[for=female]
+          margin-bottom 10px
+          display inline-block
+          padding-left dp
+          background url(./assets/checks.png) no-repeat 0 -35px
+          line-height 1.2rem
+          cursor pointer
 
 </style>

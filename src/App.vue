@@ -111,4 +111,27 @@ export default {
           labelStyle()
           background url(./assets/checks.png) no-repeat 0 -99px
 
+        fieldset
+          padding dp
+          border 1px solid #ccc
+          legend
+            padding dp
+            font-size 0.9rem
+            letter-spacing 0.1rem
+          input[type=email]
+          input[type=telephone]
+            display block
+            margin-bottom dp
+            padding 10px
+            padding-left dp+2*dp
+            border 0
+            border-radius 5px
+            font-size 1rem
+
+          input[type=email]
+            background #ccc url(./assets/inputs.png) no-repeat 7px 7px
+
+          input[type=telephone]
+            background #ccc url(./assets/inputs.png) no-repeat 7px -57px
+
 </style>

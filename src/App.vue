@@ -81,6 +81,13 @@ export default {
     border-radius 5px
     font-size 1rem
 
+  tick()
+    display block
+    width dp
+    height dp
+    float left
+    margin 10px
+
   #main
     background #eee
     margin 0
@@ -130,12 +137,23 @@ export default {
           input[type=email]
           input[type=telephone]
             inputStyle()
+            float left
+            clear both
 
           input[type=email]
             background #ccc url(./assets/inputs.png) no-repeat 7px 7px
-
+            &:valid
+              background #ccc url(./assets/inputs.png) no-repeat 7px -22px
+            &:valid + .tick
+              background #ccc url(./assets/tick.png) no-repeat center center / contain
+              tick()
           input[type=telephone]
             background #ccc url(./assets/inputs.png) no-repeat 7px -57px
+            &:valid
+              background #ccc url(./assets/inputs.png) no-repeat 7px -97px
+            &:valid + .tick
+              background #ccc url(./assets/tick.png) no-repeat center center / contain
+              tick()
 
         select
           appearance: none;

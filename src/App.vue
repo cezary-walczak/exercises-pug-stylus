@@ -65,6 +65,13 @@ export default {
     width 0 
     margin 0 
   
+  labelStyle()
+    margin-bottom 10px
+    display inline-block
+    padding-left dp
+    line-height 1.2rem
+    cursor pointer
+
   #main
     background #eee
     margin 0
@@ -86,14 +93,22 @@ export default {
           &:checked + label[for=female]
             background-position 0 0
             color #42b883
-            
         label[for=male]
         label[for=female]
-          margin-bottom 10px
-          display inline-block
-          padding-left dp
-          background url(./assets/checks.png) no-repeat 0 -35px
-          line-height 1.2rem
-          cursor pointer
+          labelStyle()
+          background url(./assets/checks.png) no-repeat 0 -33px
+
+        input[type=checkbox]
+          hideInput()
+          &:checked + label[for=web]
+          &:checked + label[for=photoshop]
+          &:checked + label[for=another]
+            background-position 0 -66px
+            color #42b883
+        label[for=web]
+        label[for=photoshop]
+        label[for=another]
+          labelStyle()
+          background url(./assets/checks.png) no-repeat 0 -99px
 
 </style>

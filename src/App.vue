@@ -5,11 +5,7 @@
       .div2 2
       .div3 3
       .div4 4
-      .div5.nested
-        p 1
-        p 2
-        p 3
-        p 4
+      .div5 5
       .div6 6
 
 </template>
@@ -31,20 +27,17 @@ export default {
     margin 0 auto
     display grid
     grid-template-columns repeat(3, 1fr)
+    grid-auto-rows (minmax(150px, auto))
     grid-gap 10px
+    // align-items start
+    justify-items streth
+    align-items streth
     div
       background #eee
       padding 30px
       &:nth-child(even)
         background #ddd
-      &.nested
-        display grid
-        grid-template-columns 1fr 1fr
-        grid-gap 10px
-        grid-column span 3
-        p
-          border 1px solid #fff
-          padding 10px
-          margin 0
-          
+      &.div5
+        justify-self center
+        align-self center
 </style>

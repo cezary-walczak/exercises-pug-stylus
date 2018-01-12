@@ -46,4 +46,5 @@ export default {
           border 1px solid #fff
           padding 10px
           margin 0
+          
 </style>
